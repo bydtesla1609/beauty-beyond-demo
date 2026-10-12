@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#21132e">
+  <meta name="description" content="无界 Beauty Beyond：为不同感官与身体条件而设计的美妆体验。安心对话、照片试色、语音反馈与真人协助。欧莱雅美妆科技黑客松参赛概念 Demo。">
+  <title>无界 · Beauty Beyond｜让美，不再设限</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8Z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="i-voice" viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9Zm13-2a8 8 0 0 1 0 10m3-13a12 12 0 0 1 0 16"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 0 1 4 0v6-8a2 2 0 0 1 4 0v8-5a2 2 0 0 1 4 0v9c0 4-3 7-7 7h-1c-3 0-5-2-6-4l-3-5a2 2 0 0 1 3-2l2 3"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3"/></symbol>
+<symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v14H3Z"/><circle cx="12" cy="13" r="4"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+<symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="6" r="3"/><path d="M5 21v-3a7 7 0 0 1 14 0v3M2 12l5 3m15-3-5 3"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+</defs></svg>
+<div class="ambient" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="无界 Beauty Beyond 首页"><span class="brand-mark">∞</span><span><b>无界<span class="brand-dot">.</span></b><small>BEAUTY BEYOND</small></span></a>
+  <nav aria-label="主导航"><a href="#home">体验首页</a><a href="#companion">安心对话</a><a href="#mirror">无界试妆</a><a href="#support">温暖同行</a></nav>
+  <div class="header-actions"><button class="access-btn" id="access-open"><span>Aa</span> <span class="access-label">无障碍</span></button><button class="icon-button info-button" id="about-open" aria-label="查看演示说明">i</button></div>
+</header>
+<main id="main" tabindex="-1">
+<section data-page="home" class="page home-page">
+  <div class="hero">
+    <div class="hero-copy"><div class="eyebrow"><span></span> BOUNDLESS EXPLORER · 无界体验家</div>
+      <h1>美，不必<span class="hero-title-second">设限<span class="title-dot">。</span></span></h1>
+      <p class="hero-lead">每一种感受，都值得被听见。<br>每一个你，都可以自由表达美。</p>
+      <p class="hero-description">AI 的随时陪伴，和真人的温暖支持。<br>让看不清、手不便、或不敢开始，都不再成为距离。</p>
+      <div class="hero-actions"><a class="button primary" href="#companion">开启我的美妆旅程 <svg><use href="#i-arrow"/></svg></a><button class="button text-button" id="tour-start"><svg><use href="#i-play"/></svg> 体验 3 分钟演示</button></div>
+      <div class="hero-trust"><span><svg><use href="#i-lock"/></svg>照片在本机处理</span><span><svg><use href="#i-heart"/></svg>没有审美评分</span><span><svg><use href="#i-voice"/></svg>可听，也可看</span></div>
+    </div>
+    <div class="hero-visual" aria-label="自然肤质的 AI 生成示例人像，周围环绕紫色光环">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+      <div class="hero-photo"><img src="assets/portrait.png" alt="自然肤质、轻轻微笑的 AI 生成示例人物" width="1254" height="1254"><div class="photo-gradient"></div><div class="photo-caption"><span>BEAUTY, ON YOUR TERMS.</span><p>按自己的方式，美。</p></div></div>
+      <div class="floating-note note-voice"><div class="note-icon"><svg><use href="#i-voice"/></svg></div><div><b>让美，被听见</b><small>色彩与变化，用声音告诉你</small></div><div class="sound-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="floating-note note-heart"><svg><use href="#i-heart"/></svg><span>不被定义 · 自在表达</span></div>
+      <div class="visual-index">01 — EVERY BEAUTY BELONGS</div>
+    </div>
+  </div>
+  <div class="home-bottom"><div class="section-intro"><span class="mini-label">DESIGNED AROUND YOU</span><h2>从你的感受出发</h2><p>选择一种方式，开始今天的体验。</p></div>
+    <button class="entry-card" data-start="vision"><span class="entry-icon"><svg><use href="#i-eye"/></svg></span><span><b>我想听着完成</b><small>视障友好 · 语音描述与分步引导</small></span><svg class="entry-arrow"><use href="#i-arrow"/></svg></button>
+    <button class="entry-card" data-start="hands"><span class="entry-icon"><svg><use href="#i-hand"/></svg></span><span><b>我需要操作帮助</b><small>手部友好 · 简化操作与真人协助</small></span><svg class="entry-arrow"><use href="#i-arrow"/></svg></button>
+    <button class="entry-card" data-start="gentle"><span class="entry-icon"><svg><use href="#i-heart"/></svg></span><span><b>我想轻松试试看</b><small>初学者友好 · 没有评判的陪伴</small></span><svg class="entry-arrow"><use href="#i-arrow"/></svg></button>
+  </div>
+  <section class="journey-section"><div class="section-heading"><div><span class="mini-label">A LITTLE TECHNOLOGY. A LOT OF CARE.</span><h2>一段完整的旅程，一直有人同行。</h2></div><button class="subtle-link" id="vision-open">了解人机分工 <svg><use href="#i-arrow"/></svg></button></div><div class="journey-grid">
+    <a href="#companion"><span>01</span><h3>先聊聊你</h3><p>说出心情与需要，得到一个<br>容易开始的小建议。</p></a><a href="#mirror"><span>02</span><h3>轻轻试一试</h3><p>选一抹喜欢的颜色，<br>在自己的照片上预览。</p></a><a href="#mirror"><span>03</span><h3>听见变化</h3><p>色调、浓淡与场景，<br>用清楚的语言描述。</p></a><a href="#support"><span>04</span><h3>把帮助带到身边</h3><p>需要动手时，连接志愿者<br>与专业美妆支持。</p></a>
+  </div></section>
+</section>
+<section data-page="companion" class="page workspace" hidden>
+  <div class="page-heading"><div><div class="eyebrow">01 / LISTEN FIRST</div><h1>先聊聊你，<em>再聊美。</em></h1><p>不必懂术语，也不用担心问得太简单。</p></div><span class="status-pill"><span></span>情景对话 · 预设回复</span></div>
+  <div class="companion-layout">
+    <aside class="panel needs-panel"><span class="mini-label">MY WAY</span><h2>你希望如何体验？</h2><div class="persona-options" role="group" aria-label="体验方式">
+      <button data-persona="gentle" aria-pressed="true"><svg><use href="#i-heart"/></svg><span><b>轻松开始</b><small>少一点压力，多一点鼓励</small></span><span class="selection-dot"></span></button>
+      <button data-persona="vision" aria-pressed="false"><svg><use href="#i-eye"/></svg><span><b>听觉优先</b><small>清晰描述，逐步朗读</small></span><span class="selection-dot"></span></button>
+      <button data-persona="hands" aria-pressed="false"><svg><use href="#i-hand"/></svg><span><b>操作更轻松</b><small>少点击，需要时找人帮忙</small></span><span class="selection-dot"></span></button></div>
+      <label class="field-label" for="occasion">今天想去哪里？</label><select id="occasion"><option value="daily">日常出门</option><option value="interview">面试 / 工作</option><option value="date">与朋友相聚</option></select>
+      <span class="field-label">喜欢怎样的感觉？</span><div class="segmented" role="group" aria-label="妆感偏好"><button data-style="soft" aria-pressed="true">自然一点</button><button data-style="bold" aria-pressed="false">鲜明一点</button></div>
+      <div class="quiet-note"><svg><use href="#i-lock"/></svg><p>无需登录。对话只停留在本次页面，刷新后清除。</p></div>
+    </aside>
+    <div class="panel chat-panel"><div class="chat-heading"><span class="assistant-avatar"><svg><use href="#i-spark"/></svg></span><div><h2>小界 · 美妆陪伴</h2><p>你的感受，比标准答案更重要</p></div><button class="icon-button" id="chat-read" aria-label="朗读最新回复"><svg><use href="#i-voice"/></svg></button></div>
+      <div id="messages" class="messages" role="log" aria-label="对话记录" aria-live="polite"><div class="message assistant"><span class="message-label">小界</span><p>你好，我是小界。今天想为自己做一点什么？<br>我们可以只从一抹唇色开始，也可以先聊聊你的感受。</p></div></div>
+      <div class="chat-prompts"><button data-prompt="我不太会化妆，怕别人觉得奇怪。">有点不敢开始</button><button data-prompt="我看不清颜色，可以说给我听吗？">把颜色说给我听</button><button data-prompt="我的手不太方便，想找人帮忙上妆。">我需要上妆帮助</button></div>
+      <form id="chat-form" class="chat-input"><label class="sr-only" for="chat-text">告诉小界你的需求</label><input id="chat-text" placeholder="说说你的心情，或今天想尝试什么…" maxlength="500" autocomplete="off"><button type="button" id="chat-mic" class="icon-button" aria-label="使用语音输入"><svg><use href="#i-mic"/></svg></button><button type="submit" class="send-button" aria-label="发送消息"><svg><use href="#i-arrow"/></svg></button></form><p class="input-note" id="voice-hint">可输入文字或点选上方话题。语音输入由浏览器提供，可能使用其语音服务。</p>
+    </div>
+    <aside class="panel suggestion-panel"><span class="mini-label">A SMALL FIRST STEP</span><h2>今天，先试这一抹。</h2><div class="shade-orb" id="suggestion-orb"></div><span class="shade-number" id="suggestion-number">01 / ROSE</span><h3 id="suggestion-name">柔雾玫瑰</h3><p id="suggestion-copy">柔和的玫瑰豆沙调。先用薄薄一层，保留你原本的唇色。</p><div class="suggestion-tags" id="suggestion-tags"><span>日常出门</span><span>自然薄涂</span></div><a class="button primary full" href="#mirror">带着建议去试色 <svg><use href="#i-arrow"/></svg></a><p class="fine-print">根据你的选择匹配示例色彩，不评判外貌，也不推销产品。</p></aside>
+  </div>
+</section>
+<section data-page="mirror" class="page workspace" hidden>
+  <div class="page-heading"><div><div class="eyebrow">02 / EXPLORE YOUR COLOR</div><h1>这一抹，<em>由你定义。</em></h1><p>试试看喜欢的颜色，再听听它的感觉。</p></div><span class="status-pill"><svg><use href="#i-lock"/></svg>照片仅在设备内处理</span></div>
+  <div class="mirror-layout"><div class="panel mirror-panel"><div class="mirror-toolbar"><span id="image-label">AI 生成示例人像</span><button id="reset-photo" class="subtle-link">恢复示例</button></div><div class="canvas-wrap"><canvas id="makeup-canvas" width="900" height="900" role="img" aria-label="试色效果。下方提供完整文字描述。"></canvas><div class="canvas-badge" id="canvas-badge">照片试色</div><button id="compare-button" class="compare-button" aria-pressed="false"><svg><use href="#i-eye"/></svg>查看原图</button><div class="canvas-bottom">YOUR BEAUTY. YOUR CHOICE.</div></div><div class="photo-actions"><label class="button secondary" for="photo-input"><svg><use href="#i-upload"/></svg>选择我的照片</label><input class="sr-only" type="file" id="photo-input" accept="image/jpeg,image/png,image/webp"><button class="button secondary" id="camera-open"><svg><use href="#i-camera"/></svg>拍摄照片</button></div><p id="landmark-status" class="fine-print" role="status">示例唇区已准备好。选择自己的照片后，会在本机定位唇部。</p></div>
+  <div class="mirror-controls"><div class="panel color-panel"><div class="panel-title"><div><span class="mini-label">THE COLOR EDIT</span><h2>选一抹，感受不同。</h2></div><span class="small-counter">01 — 04</span></div><div class="swatches" role="group" aria-label="选择唇色"><button data-shade="rose" aria-pressed="true"><span style="--swatch:#aa4964"></span><b>柔雾玫瑰</b><small>01 · 温柔日常</small></button><button data-shade="peach" aria-pressed="false"><span style="--swatch:#c26750"></span><b>暖杏珊瑚</b><small>02 · 轻盈明快</small></button><button data-shade="berry" aria-pressed="false"><span style="--swatch:#883959"></span><b>微醺莓果</b><small>03 · 沉静鲜明</small></button><button data-shade="red" aria-pressed="false"><span style="--swatch:#b3273e"></span><b>自在正红</b><small>04 · 自信表达</small></button></div><div class="range-label"><label for="intensity">上色浓度</label><output id="intensity-value" for="intensity">45% · 自然薄涂</output></div><input type="range" id="intensity" min="10" max="90" value="45" step="5"><div class="range-ends"><span>轻透</span><span>浓郁</span></div><p class="fine-print">示例色号，不对应在售商品。屏幕预览与实际上唇会有差异。</p></div>
+  <div class="panel feedback-panel"><div class="panel-title"><div><span class="mini-label">BEAUTY YOU CAN HEAR</span><h2>把变化，说给你听。</h2></div><span class="sound-symbol"><svg><use href="#i-voice"/></svg></span></div><p id="color-description" class="color-description"></p><div class="feedback-actions"><button id="read-color" class="button primary"><svg><use href="#i-voice"/></svg>听听试色描述</button><button id="stop-speech" class="subtle-link">停止朗读</button></div><p class="fine-print">描述来自所选色彩与浓度，未对你的外貌或肤色作出判断。</p></div>
+  <div class="panel next-step-panel"><span class="step-tag">NEXT STEP</span><h3>把喜欢，变成一次小小的行动。</h3><div class="next-actions"><button id="guide-open" class="subtle-link">听分步上妆指引 <svg><use href="#i-arrow"/></svg></button><a href="#support" class="subtle-link">找人一起完成 <svg><use href="#i-arrow"/></svg></a></div><button id="save-look" class="button secondary full">保存我的试色卡 <svg><use href="#i-upload"/></svg></button></div>
+  </div></div>
+</section>
+<section data-page="support" class="page workspace" hidden>
+  <div class="page-heading"><div><div class="eyebrow">03 / A HUMAN TOUCH</div><h1>科技陪你探索，<em>人陪你完成。</em></h1><p>真正需要动手、专业判断和面对面陪伴时，我们一起向前一步。</p></div><span class="status-pill">公益协助网络 · 概念演示</span></div>
+  <div class="support-banner"><span class="support-heart"><svg><use href="#i-heart"/></svg></span><div><h2>你的需要，不必一个人克服。</h2><p>告诉我们想要的帮助，以你感到舒服的方式，连接一位同行者。</p></div><span class="banner-word">TOGETHER,<br>BEYOND.</span></div>
+  <div class="support-layout"><div class="panel booking-panel"><span class="mini-label">FIND YOUR SUPPORT</span><h2>安排一次温暖的相遇</h2><form id="booking-form"><fieldset><legend>你需要哪种帮助？</legend><div class="service-options"><label><input type="radio" name="service" value="上妆协助" checked><span><svg><use href="#i-hand"/></svg><b>上妆协助</b><small>志愿者协助拿取与上妆</small></span></label><label><input type="radio" name="service" value="专业咨询"><span><svg><use href="#i-spark"/></svg><b>专业咨询</b><small>复杂遮瑕等由专业人士判断</small></span></label><label><input type="radio" name="service" value="陪伴练习"><span><svg><use href="#i-heart"/></svg><b>陪伴练习</b><small>放慢速度，一起熟悉步骤</small></span></label></div></fieldset><div class="form-row"><div><label for="support-mode">希望如何见面</label><select id="support-mode"><option>社区无障碍活动点</option><option>线上视频指导</option><option>机构团体活动</option></select></div><div><label for="support-time">希望的时间</label><select id="support-time"><option>周六上午</option><option>周六下午</option><option>周日下午</option></select></div></div><label for="support-note">让同行者提前知道 <span>（选填）</span></label><textarea id="support-note" rows="3" maxlength="300" placeholder="例如：请先介绍每个步骤；我需要方便轮椅进入的场地。"></textarea><label class="checkbox-label"><input type="checkbox" id="share-plan" checked>在这次模拟中，带上我选择的唇色与体验偏好</label><div class="booking-disclaimer"><svg><use href="#i-lock"/></svg><p>本页仅演示预约流程，不收集联系方式，不会联系任何机构或生成真实预约。</p></div><button class="button primary full" type="submit">预览我的协助安排 <svg><use href="#i-arrow"/></svg></button></form></div>
+  <aside><div class="panel human-panel"><span class="mini-label">THE RIGHT HELP, AT THE RIGHT TIME</span><h2>让擅长的人，做擅长的事。</h2><div class="division-item"><span class="division-icon"><svg><use href="#i-spark"/></svg></span><div><h3>AI 帮你探索</h3><p>随时问答、需求匹配、照片试色与语音描述。</p></div></div><div class="division-item"><span class="division-icon"><svg><use href="#i-person"/></svg></span><div><h3>志愿者陪你行动</h3><p>协助操作工具、练习步骤，提供面对面的陪伴。</p></div></div><div class="division-item"><span class="division-icon"><svg><use href="#i-heart"/></svg></span><div><h3>专业人士提供支持</h3><p>复杂遮瑕、受损皮肤的适用性与深度情绪支持，转交相应专业人士。</p></div></div></div><div class="panel network-panel"><span class="mini-label">A NETWORK OF CARE</span><h3>从社区，连接更远的地方。</h3><p>合作网络构想：社区服务点、美妆志愿者、专业美妆师、特殊学校与养老机构。</p><span class="outline-tag">待建立合作 · 未接入真实机构</span></div></aside></div>
+</section>
+</main>
+<footer><div><b>无界 · BEAUTY BEYOND</b><span>让每一个人，都能平等地感知、表达、创造美。</span></div><p>欧莱雅美妆科技黑客松 · 参赛概念 Demo <span>非欧莱雅官方产品</span></p><button class="subtle-link" id="footer-about">演示说明与未来拓展 ↗</button></footer>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="access-dialog" aria-labelledby="access-title"><div class="dialog-heading"><div><span class="mini-label">MADE FOR YOUR WAY</span><h2 id="access-title">选择适合你的体验</h2></div><button data-close class="icon-button" aria-label="关闭无障碍设置"><svg><use href="#i-close"/></svg></button></div><p>这些设置会保存在当前设备。你也可以使用键盘和屏幕阅读器完成主要操作。</p><label class="setting-row"><span><b>大字模式</b><small>放大正文和控件文字</small></span><input type="checkbox" id="large-text"></label><label class="setting-row"><span><b>高对比模式</b><small>增强文字与背景的对比</small></span><input type="checkbox" id="high-contrast"></label><label class="setting-row"><span><b>自动朗读回复</b><small>在你主动操作后，朗读对话与试色描述</small></span><input type="checkbox" id="auto-read"></label><label class="setting-row"><span><b>减少动态效果</b><small>关闭光环与转场动画</small></span><input type="checkbox" id="reduce-motion"></label><label class="field-label" for="speech-speed">朗读速度</label><select id="speech-speed"><option value="0.8">慢一些</option><option value="1" selected>正常</option><option value="1.2">快一些</option></select><button class="button primary full" data-close>按我的方式继续</button></dialog>
+<dialog id="about-dialog" class="wide-dialog" aria-labelledby="about-title"><div class="dialog-heading"><div><span class="mini-label">THE DEMO, CLEARLY</span><h2 id="about-title">一份可以体验的初步构想</h2></div><button data-close class="icon-button" aria-label="关闭演示说明"><svg><use href="#i-close"/></svg></button></div><p>面向「无界体验家」赛道，优先覆盖感官／操作障碍与初学者／容貌焦虑场景。产品主线是：安心对话 → 个性化建议 → 照片试色 → 语音反馈 → 按需真人协助。</p><div class="about-columns"><div><h3>现在可以实际操作</h3><ul><li>偏好选择、四款色彩与浓度调节</li><li>示例照片、自选照片、拍摄照片</li><li>本机人脸关键点定位与唇部上色</li><li>原图对比、试色卡下载</li><li>浏览器语音朗读与可用时的语音输入</li><li>大字、高对比、键盘和减少动态模式</li></ul></div><div><h3>本次以情景演示呈现</h3><ul><li>对话是预设分支，尚未连接大模型</li><li>色彩描述依据选项生成，不是视觉理解</li><li>预约是本页模拟，不联系真实志愿者</li><li>不提供皮肤诊断或心理治疗</li><li>照片试色不是实时 AR，也不等同于实物上妆</li></ul></div></div><div class="future-box"><h3>向更多人，打开美的可能</h3><p>后续拓展：不受性别标签限制的推荐、长者大字与语音交互、由专业人士参与的疤痕遮瑕支持。正式版本可连接多模态模型、实时 AR 与经核验的公益服务网络。</p></div><p class="fine-print">示例人像由 AI 生成。站点不上传照片与文字；语音输入由浏览器语音服务处理，启用前会请求麦克风权限。无美貌评分、无广告追踪、无真实商品推销。</p><div class="dialog-actions"><a href="https://mp.weixin.qq.com/s/HsYcUikzxRQGulak0ZAnvw?scene=1" target="_blank" rel="noopener noreferrer" class="subtle-link">活动介绍 ↗</a><button class="button primary" data-close>开始探索</button></div></dialog>
+<dialog id="guide-dialog" aria-labelledby="guide-title"><div class="dialog-heading"><div><span class="mini-label">ONE STEP AT A TIME</span><h2 id="guide-title">慢慢来，一步就好。</h2></div><button data-close class="icon-button" aria-label="关闭分步指引"><svg><use href="#i-close"/></svg></button></div><div id="guide-content"></div><div class="guide-controls"><button id="guide-prev" class="button secondary">上一步</button><button id="guide-read" class="icon-button" aria-label="朗读当前步骤"><svg><use href="#i-voice"/></svg></button><button id="guide-next" class="button primary">下一步</button></div><p class="fine-print">如需他人协助，可随时前往「温暖同行」。是否上妆、何时停下，都由你决定。</p></dialog>
+<dialog id="booking-dialog" aria-labelledby="booking-title"><div class="dialog-heading"><div><span class="mini-label">YOUR SUPPORT PLAN</span><h2 id="booking-title">你的协助安排，准备好了。</h2></div><button data-close class="icon-button" aria-label="关闭模拟安排"><svg><use href="#i-close"/></svg></button></div><span class="outline-tag">模拟预览 · 尚未提交预约</span><div id="booking-summary"></div><p>正式服务中，需由合作机构确认时间、服务人员与无障碍条件后，再与你确认。本次不会发送任何信息。</p><div class="dialog-actions"><button class="button secondary" id="booking-back">返回修改</button><button class="button primary" id="booking-confirm">完成演示</button></div></dialog>
+<dialog id="camera-dialog" aria-labelledby="camera-title"><div class="dialog-heading"><h2 id="camera-title">拍一张正面照片</h2><button data-close class="icon-button" aria-label="关闭摄像头"><svg><use href="#i-close"/></svg></button></div><p>脸部保持正对镜头，光线均匀。照片只在当前设备内处理。</p><video id="camera-video" playsinline muted autoplay></video><p id="camera-status" role="status">正在请求摄像头权限…</p><button id="camera-capture" class="button primary full" disabled>拍摄并试色</button></dialog>
+</body></html>
